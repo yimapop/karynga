@@ -1,0 +1,10 @@
+.text-expo {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+.text-expo>span{
+  font-size: 40px;
+}

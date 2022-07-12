@@ -1,0 +1,29 @@
+.img {
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .img {
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img img {
+        width: 400px;
+        height: 400px;
+        margin-right: 0;
+    }
+}

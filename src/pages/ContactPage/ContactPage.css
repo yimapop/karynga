@@ -1,0 +1,9 @@
+.text-contact a {
+    font-size: 1.5rem;
+    line-height: 80px;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+
+}

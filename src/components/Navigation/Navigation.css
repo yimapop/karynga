@@ -1,0 +1,207 @@
+.navbar-box {
+    width: 30%;
+    float: left;
+    height: 100vh;
+}
+
+/* VERTICAL NAVBAR */
+
+.logo-karynga {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-weight: 900;
+    margin-left: 30px;
+    margin-top: 40px;
+    font-size: 1.4rem;
+}
+
+.navbar {
+    height: auto;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.navbar a:hover {
+    font-weight: 700;
+}
+
+.obra,
+.pinturas,
+.expo,
+.bio,
+.contacto {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.humanidad,
+.criaturas,
+.aglomeraciones,
+.saturacion,
+.drogadiccion,
+.medula,
+.sistema {
+    text-decoration: none;
+    font-size: 0.95em;
+    color: black;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sub-menu.active {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    transition-duration: .7s;
+    height: 260px;
+}
+
+.mobile-menu-icon,
+.mobile-close-icon {
+    display: none;
+    transition: .35s;
+}
+
+.sub-menu {
+    overflow: hidden;
+    height: 0;
+}
+
+/* RESPONSIVE NAVBAR */
+
+@media screen and (max-width: 768px) {
+
+    .navbar-box {
+        width: 40%;
+        margin: auto;
+        height: auto;
+        float: none;
+    }
+
+    .logo-karynga {
+        display: inline-block;
+        height:80px;
+        position: absolute;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        margin: auto;
+        margin-top: 30px;
+        font-size: 1.6rem;
+        z-index:1000;
+    }
+
+    .logo-karynga h1{
+        text-align: center;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-mobile-links {
+        left: 0;
+        top: 0;
+        padding-top: 60px;
+        height: 100vh;
+        position: absolute;
+        list-style: none;
+        background-color: black;
+        transition: all 0.5s ease-out;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .sub-menu {
+        display: block;
+        height: auto;
+        list-style-type: none;
+        margin: auto;
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .sub-menu.active {
+        display: block;
+        overflow: none;
+        height: auto;
+        margin-left: 0;
+        list-style-type: none;
+        margin-bottom: 10px;
+    }
+
+    .obra,
+    .pinturas,
+    .expo,
+    .bio,
+    .contacto {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 1.1rem;
+    }
+
+    .humanidad,
+    .criaturas,
+    .aglomeraciones,
+    .saturacion,
+    .drogadiccion,
+    .medula,
+    .sistema {
+        text-align: center;
+        text-decoration: none;
+        font-size: 0.95em;
+        text-align: center;
+        color: white;
+        padding-bottom: 20px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .mobile-menu-icon {
+        width: 25px;
+        height: 25px;
+        display: block;
+        color: black;
+        text-align: center;
+        margin: auto;
+        cursor: pointer;
+        transition: 2s ease-in;
+        margin-top:120px;
+    }
+
+    .mobile-close-icon {
+        width: 40px;
+        height: 40px;
+        color: white;
+        position: absolute;
+        top: 50px;
+        right: 40px;
+        display: inline-block;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .mobile-menu-icon:hover {
+        color: grey;
+    }
+
+    .mobile-close-icon:hover {
+        color: grey;
+    }
+
+}
